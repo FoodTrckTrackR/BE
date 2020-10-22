@@ -1,0 +1,31 @@
+{
+  "name": "BE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:seed": "knex seed:run",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoodTrckTrackR/BE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FoodTrckTrackR/BE/issues"
+  },
+  "homepage": "https://github.com/FoodTrckTrackR/BE#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "knex": "^0.21.6",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
