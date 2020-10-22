@@ -4,7 +4,7 @@ exports.up = function (knex) {
     tbl.string("name").notNullable();
     tbl.string("cuisineType").notNullable();
     tbl.integer("ratings");
-    tbl.integer("avgRating");
+    tbl.string("avgRating");
   });
 };
 
