@@ -4,6 +4,8 @@ exports.up = function (knex) {
     tbl.string("username").unique().notNullable();
     tbl.string("email").unique().notNullable();
     tbl.string("password").notNullable();
+    tbl.string("currentLocation");
+    tbl.string("favoriteTrucks");
   });
 };
 
