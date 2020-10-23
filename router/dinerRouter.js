@@ -18,7 +18,8 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
   const user = req.body;
 
-  db.insert(user)
+  db("diners")
+    .insert(user)
     .then((diner) => {
       res.status(201).json(diner);
     })
@@ -26,7 +27,7 @@ router.post("/", (req, res) => {
       console.log(err);
       res
         .status(500)
-        .json({ message: "Error adding the new user to the database" });
+        .json({ message: "Error adding the user to the database" });
     });
 });
 
