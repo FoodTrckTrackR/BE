@@ -5,6 +5,8 @@ exports.up = function (knex) {
     tbl.string("cuisineType").notNullable();
     tbl.integer("ratings");
     tbl.string("avgRating");
+    tbl.string("menu");
+    tbl.string("currentLocation");
   });
 };
 

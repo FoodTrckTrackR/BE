@@ -15,4 +15,19 @@ router.get("/", (req, res) => {
     });
 });
 
+router.post("/", (req, res) => {
+  const user = req.body;
+
+  db.insert(user)
+    .then((diner) => {
+      res.status(201).json(diner);
+    })
+    .catch((err) => {
+      console.log(err);
+      res
+        .status(500)
+        .json({ message: "Error adding the new user to the database" });
+    });
+});
+
 module.exports = router;
