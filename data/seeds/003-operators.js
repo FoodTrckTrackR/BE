@@ -9,12 +9,14 @@ exports.seed = function (knex) {
           username: "JohnSmith",
           email: "johnsmith@email.com",
           password: "js1234",
+          role: "operator",
           trucksOwned: ["Señor Sisig"],
         },
         {
           username: "JaneSmith",
           email: "janesmith@email.com",
           password: "js4321",
+          role: "operator",
           trucksOwned: ["Phat Thai"],
         },
       ]);
